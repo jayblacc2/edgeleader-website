@@ -1,0 +1,298 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* h1, h2, h3, h4 {
+  padding: 0 1.5rem;
+} */
+
+p {
+  margin: .75rem 0;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+/* Utility classes */
+.container {
+  max-width: 1100px; 
+  margin: 0 auto;
+  padding: 0 2rem;
+  overflow: hidden;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-primary {
+  color: #93cb52;
+}
+.l-heading {
+  font-size: 4rem;
+  margin-bottom: .75rem;
+  line-height: 1.1;
+}
+
+
+.m-heading {
+  font-size: 2rem;
+  margin-bottom: .75rem;
+  line-height: 1.1; 
+}
+.lead {
+  font-size: 1.3rem;
+  margin-bottom: 2rem;
+}
+.bg-light {
+  background: #f4f4f4;
+  color:#333;
+}
+.bg-dark {
+  background: #252525;
+  color: #fff;
+}
+.bg-primary {
+  background: #93cb52;
+  color: #fff;
+}
+.btn {
+  display: inline-block;
+  background: #93cb52;
+  padding: .75rem 1.9rem;
+  border: none;
+  border-radius: .3rem;
+}
+
+.py-1 {padding: 1.5rem 0;}
+.py-2 {padding: 2rem 0;}
+.py-3 {padding: 3rem 0;}
+
+.p-1 {padding: 1.5rem;}
+.p-2 {padding: 2rem;}
+.p-3 {padding: 3rem;}
+
+.btn:hover {
+background: #789b5a;
+} 
+
+.btn-dark {
+  background: #333;
+  color: #fff;
+}
+
+.list {
+  margin: 0.5rem 0;
+  list-style: none;
+}
+
+.list li {
+  padding: 0.5rem 0;
+  border-bottom: #444 dotted 1px;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.4;
+}
+
+/* Navbar */
+
+#navbar {
+  display:flex;
+  position: sticky;
+  top: 0;
+  background: #333;
+  color:#fff;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  z-index: 1; /* to make the navbar always stay closer */
+  /* height:4.2rem; */
+}
+
+#navbar ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  /* justify-content: space-around;
+  flex: 0 0 30%; */
+}
+
+#navbar ul li a {
+  padding: 0.75rem;
+  margin: 0 0.25rem;
+}
+
+/* #navbar ul li a:hover,
+#navbar ul li a .current {
+  background: #93cb52;
+  border-radius: 3px;
+} */
+
+/* header Sowcaase*/ 
+#showcase {
+  background: #333 url('../img/showcase.jpg');
+  background-position: center center/cover;
+  height: 100vh;
+  color: #fff;
+  width:100vw;
+  position: relative;
+}
+
+#showcase .showcase-content {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  padding: 0 2rem;
+  /*Overlay */
+  position: absolute;
+  top: 0px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 20, 0, 0.8);  
+  overflow: hidden;
+  width: 100%;
+}
+
+.btn:hover {
+  transform: translateY(2px);
+}
+.l-heading {
+  text-transform: uppercase;
+  font-weight: 400;
+}
+ /* Section What */
+#what .items {
+  display: flex;
+  padding: 1rem;
+}
+
+#what .items .item {
+  flex: 1;
+  text-align: center;
+  padding: 1rem;
+}
+
+#what .items .item i {
+  background: #93cb52;
+  padding: 1rem;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+}
+
+/* what we do section */
+#who {
+  display: flex;
+}
+#who  div {
+  flex:1;
+} 
+
+#who .who-img {
+  background: url('../img/people.jpg') no-repeat center center/cover;
+}
+#who .list li:last-child {
+  border-bottom: none;
+}
+#clients .items {
+  display: flex;
+}
+
+#clients .items img {
+  display: block;
+  width:60%;
+  margin:auto;
+}
+
+/* section: contact */
+#contact {
+  display: flex;
+}
+
+#contact .map, #contact .contact-form { 
+  flex: 1;
+}
+
+#contact .contact-form label {
+  display: block;
+}
+#contact .contact-form .form-group {
+  margin: .75rem;
+  padding-bottom: .5rem 
+}
+
+
+#contact .contact-form input,
+#contact .contact-form textarea {
+ width:100%;
+ padding: .5rem;
+ border: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 
+#showcase {
+  background: repeating-linear-gradient(to right bottom, #242323b4, #2b2929a4 ), url('../img/showcase.jpg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: auto;
+  width:auto;
+}
+
+#showcase h1 {
+  font-size: 3rem;
+  color:#fff;
+  word-spacing: .2rem;
+}
+
+#showcase .showcase__lead-text {
+  color:#fff;
+  
+}
+
+.btn {
+  background: #93cb52;
+  padding: .75rem 1.9rem;
+  border: none;
+  border-radius: .3rem;
+  margin-top: 1rem;
+}
+
+.btn:hover {
+  opacity: 0.8;
+} */
